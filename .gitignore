@@ -1,0 +1,12 @@
+# idea 工程
+.idea/
+*.iml
+
+# 下载数据
+download/
+
+# 上传数据
+upload/
+
+# 笔记本
+*.nb
