@@ -8,5 +8,6 @@ download/
 # 上传数据
 upload/
 
-# 笔记本
-*.nb
+# 笔记本 & 测试文件
+temp.nb
+test.m
