@@ -4,10 +4,10 @@
 ```text
 Project/
     |- download/
-         | test.csv
-         | train.csv
+        | test.csv
+        | train.csv
     |- upload/
-        | 
+        | submission.csv
     | train.wls % 训练脚本
     | data.wls  % 数据处理脚本
     | main.wls  % 统合脚本
@@ -61,13 +61,22 @@ Project/
  - 其中Par代表Parent也即父母，Ch代表Child也即子女
 - Ticket 字符型变量
  - 代表乘客的船票号
- - 有的是纯数字, 有的还带意义不明的字幕
+ - 有的是纯数字, 有的还带意义不明的字母
 - Fare 数值型
  - 代表乘客的船票价
  - 可能代表了船员身份? 不清楚船员是否要船票
 - Cabin 字符型
- - 代表乘客所在的舱位，只有少数乘客有
+ - 代表乘客所在的舱位，只有少数乘客有, 有的还是双舱位, 神奇.
 - Embarked 字符型
  - 代表乘客登船口岸, 意义不明, 感觉上无关
 
 ## 查漏补缺
+
+接下来我们做两件事, 把ID扔了, 生死提到外面, 最后处理一下姓名.
+我发现所有姓名都是 `姓氏 + , + 称谓 + . + 名字`, 有的人还带一个括号可能是原名或者啥, 不管了, 都算作名字.
+Cabin 这个很神奇, 基本上大多数人没有, 有的是合租的, 有的人却是同时有多个舱.
+不管怎么样也处理下吧.
+
+手动处理,514号, 
+Rothschild, Mrs. Martin (Elizabeth L. Barrett)
+K2=LEFT(K2,1)

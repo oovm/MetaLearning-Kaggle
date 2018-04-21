@@ -6,8 +6,8 @@
 download/
 
 # 上传数据
-upload/
+# upload/
 
 # 笔记本 & 测试文件
 temp.nb
-test.m
+# test.m
