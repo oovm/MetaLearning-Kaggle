@@ -8,9 +8,11 @@ download/
 # 上传数据
 # upload/
 *.temp.*
+submission.csv
 
 # 笔记本 & 测试文件
 temp.nb
+test.nb
 # test.m
 
 # 特殊规则
